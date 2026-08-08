@@ -92,3 +92,75 @@ int main() {
     return 0;
 
 }
+
+
+//write a program to determine whether a student has passed or failed.to pass a student requires a total of 40% 
+and atleast 33% in each subject . assume there are 3 subjects and take the marks as input from the user.
+
+#include<stdio.h>
+int main(){
+    int m1,m2,m3;
+    printf("m1 = ");
+    scanf("%d",&m1);
+    printf("m2 = ");
+    scanf("%d",&m2);
+    printf("m3 = ");
+    scanf("%d",&m3);
+    
+    float percentage = (m1+m2+m3)/3;
+    printf("percentage = %.2f\n",percentage);
+
+    if(percentage > 40 ){
+        if(m1 > 33 && m2 > 33 && m3 > 33){
+            printf("pass\n");
+        }
+        else{
+        printf("fail\n");
+    }
+        }
+    return 0;
+}
+
+
+//calculate income tax paid by an employee to the government 
+#include<stdio.h>
+int main(){
+    int income;
+    printf("enter income : ");
+    scanf("%d",&income);
+    printf("income = %d\n",income);
+
+    if(income > 0 && income <= 250000){
+        printf("tax = 0");
+    }
+    else if(income > 250000 && income <= 500000){
+        printf("Tax = %.2f\n",0.05 * (income-250000));
+    }
+    else if(income > 500000 && income <= 1000000){
+        printf("Tax = %.2f\n",0.05 * (500000-250000) + 0.2 * (income - 500000));
+    }
+    else {
+        printf("Tax = %.2f\n",0.05 *(500000-250000) + 0.2 * (1000000-500000) + 0.3 * (income - 1000000));
+    }
+    return 0;
+
+}
+
+
+//write a program to check whether a year entered by the user is a leap year.
+#include<stdio.h>
+int main(){
+    int year;
+    printf("year = ");
+    scanf("%d",&year);
+    
+
+    if(year % 4 == 0 || year % 400 == 0 && year % 100 != 0) {
+        printf("%d is a leap year",year);
+    }
+    else {
+        printf("%d is not a leap year",year);
+    }
+}
+
+

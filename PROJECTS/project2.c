@@ -1,4 +1,4 @@
-//PROJECT - 1 Mini Calculator Using else-if
+//PROJECT -  Mini Calculator Using else-if
 
 #include<stdio.h>
 int main() {
@@ -35,7 +35,7 @@ int main() {
 
 
 
-//Project - 2 Mini Calculator using switch
+//Project -  Mini Calculator using switch
 
 #include<stdio.h>
 int main() {
