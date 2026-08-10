@@ -1,0 +1,24 @@
+//create a string firstname & lastname to store details of user & print all the characters using a loop.
+
+#include<stdio.h>
+void printString(char arr[]);
+
+void printString(char arr[]){
+    for(int i = 0 ; arr[i]  != '\0' ; i++){
+        printf("%c",arr[i]);
+    }
+    printf("\n");
+}
+
+int main(){
+    char firstname[] = "Raman";
+    char lastname[] = "Singhal";
+    char fullname[] = "Raman Singhal";
+
+    printString(firstname);
+    printString(lastname);
+    printString(fullname);
+
+    return 0;
+    
+}
